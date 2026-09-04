@@ -241,14 +241,14 @@
       display: block; font-size: 0.6rem; letter-spacing: 0.1em;
       color: var(--stone); margin-top: 0.25rem; text-transform: none; font-weight: 300;
     }
+    .pt-row { border-bottom: 1px solid var(--border); }
+    .pt-row:last-child { border-bottom: none; }
     .pt-row td {
       padding: 1.5rem 1.5rem 1.5rem 0;
-      border-bottom: 1px solid var(--border);
       vertical-align: middle;
     }
-    .pt-row:last-child td { border-bottom: none; }
     .pt-level {
-      font-size: 0.95rem; font-weight: 400; color: var(--navy); display: block;
+      font-size: 0.95rem; font-weight: 400; color: var(--navy);
     }
     .pt-note {
       font-size: 0.72rem; color: var(--stone); letter-spacing: 0.02em;
@@ -287,7 +287,8 @@
         border: 1px solid var(--border-mid); padding: 1.4rem 1.4rem 0.6rem;
         margin-bottom: 1rem; background: var(--cream-dark);
       }
-      .pt-row td { border-bottom: none; padding: 0 0 0.9rem; }
+      .pt-row { border-bottom: none; }
+      .pt-row td { padding: 0 0 0.9rem; }
       .pt-row td.pt-level { padding-bottom: 1rem; border-bottom: 1px solid var(--border); margin-bottom: 0.9rem; }
       .pt-row td.pt-ref { display: none; }
       .pt-row td[data-label]::before {
@@ -1259,7 +1260,7 @@
           <p class="section-label">Get in Touch</p>
           <h2 class="section-heading">Ready to <em>start?</em></h2>
           <p>
-            Fill in the form and I'll be in touch within 24 hours to discuss your
+            Fill in the form and I'll be in touch within 3 business days to discuss your
             child's needs and find the right program for them.
           </p>
           <div class="contact-list">
@@ -1280,7 +1281,7 @@
 
         <div class="enrol-form reveal">
           <h3>Enquiry Form</h3>
-          <p>We'll respond within 24 hours.</p>
+          <p>We'll respond within 3 business days.</p>
           <form id="enquiryForm" novalidate>
             <div class="form-row">
               <div class="form-group">
@@ -1341,7 +1342,7 @@
           <div class="form-success" id="formSuccess">
             <div class="tick">&#10003;</div>
             <h4>Enquiry received</h4>
-            <p>Thank you for reaching out. I'll be in contact within 24 hours.</p>
+            <p>Thank you for reaching out. I'll be in contact within 3 business days.</p>
           </div>
         </div>
       </div>
